@@ -1,0 +1,59 @@
+<!--pages/home/home.wxml-->
+<form bindsubmit="search" class="searchbar" >
+    <image src="/images/search.png" class="searchbar-img" mode="aspectFit"/>
+    <input name="keyWord" class="searchbar-input" placeholder="请输入" placeholder-class="placeholderStyle"/>
+    <button class="btn-search" style="width: 101rpx;height: 63rpx;border-radius: 22rpx;" form-type="submit">
+      <view class="btn-name">搜索</view>
+    </button>
+</form>
+
+<swiper class="swiper" indicator-dots="true" indicator-color="rgba(0, 0, 0, .15)" indicator-active-color="#ffffff" autoplay="true" interval="2000" circular="true">
+    <swiper-item wx:for="{{swiperList}}" wx:key="goods_id">
+        <image src="{{item.img}}" mode="aspectFill" style="width: 100%;height: 100%;border-radius: 33rpx;"/>
+    </swiper-item>  
+</swiper>
+
+<view class="consulate">
+    <view class="title" style="position: absolute;left: 18rpx;top: 11rpx;">急速咨询</view>
+    <view class="content" style="position: absolute;left: 18rpx;top: 63rpx;">一键点击，快速留言咨询</view>
+    <button class="btn-consulate" style="width: 306rpx;height: 67rpx;border-radius: 22rpx;" bindtap="consulate">
+        <view class="btn-name">开始咨询</view>
+    </button>
+</view>
+
+<view class="show" style="top: 574rpx;" bindtap="success">
+    <view class="title" style="position: absolute;left: 16rpx;top: 13rpx;">成功案例</view>
+    <view class="content" style="position: absolute;left: 16rpx;top: 63rpx;">分享治疗经验</view>
+    <image src="/images/show_eg.png" mode="aspectFit" style="width: 143rpx;height: 94rpx;position: absolute;right: 9rpx;top: 22rpx;" />
+</view>
+
+<view class="show" style="top: 714rpx;" bindtap="science">
+    <view class="title" style="position: absolute;left: 16rpx;top: 13rpx;">科普知识</view>
+    <view class="content" style="position: absolute;left: 16rpx;top: 63rpx;">权威疾病科普</view>
+    <image src="/images/show_info.png" mode="aspectFit" style="width: 152rpx;height: 85rpx;position: absolute;right: 9rpx;top: 29rpx;" />
+</view>
+
+<view class="title" style="position: absolute;left: 45rpx;top: 859rpx;">精选推荐</view>
+<view class="contain">
+    <view class="list" wx:for="{{consulationList}}" data-index="{{index}}" wx:key="tag" bindtap="detail">
+        <image class="avatar" src="{{item.avatar}}" mode="aspectFill"/>
+        <view class="name">{{item.name}}
+            <view class="label">{{item.tag}}</view>
+        </view>
+        <view class="list-title">{{item.title}}</view>
+        <view class="list-content">{{item.description}}</view>
+        <image class="list-img0" wx:if="{{item.img0 && item.img1}}" src="{{item.img0}}" mode="aspectFill" />
+        <!-- 只有一张图片的情况,第一张图全圆角 -->
+        <image class="list-img0" wx:if="{{!item.img1 && item.img0}}" src="{{item.img0}}" mode="aspectFill" style="border-radius: 25rpx;"/>
+
+        <image class="list-img1" wx:if="{{item.img2 && item.img1}}" src="{{item.img1}}" mode="aspectFill"/>
+        <!-- 有两张图片的情况 -->
+        <image class="list-img1" wx:if="{{!item.img2 && item.img1}}" src="{{item.img1}}" mode="aspectFill" style="border-top-right-radius: 25rpx;border-bottom-right-radius: 25rpx;"/>
+        <image class="list-img2" wx:if="{{item.img2}}" src="{{item.img2}}" mode="aspectFill"/> 
+    </view>
+</view>
+
+
+
+
+

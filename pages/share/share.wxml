@@ -1,0 +1,8 @@
+<!--pages/share/share.wxml-->
+<navbar title="{{title}}"></navbar>
+<view class="show">
+  <image class="poster" src="{{picURL}}" mode="aspectfill"/>
+</view>
+<button class="btn" style="width: 569rpx;height: 85rpx;border-radius: 18rpx;">
+  <view class="btn-name" bindtap="preserve">保存图片</view>
+</button>

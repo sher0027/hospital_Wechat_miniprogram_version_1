@@ -1,0 +1,41 @@
+<!--pages/consulation_add/consulation_add.wxml-->
+<navbar title="{{title}}"></navbar>
+<view class="hint">*以下信息请按门诊病历或出院小结内容如实填写</view>
+<form bindsubmit="addConsulation">
+  <view class="card">  
+    <view class="card-title" style="top: 33rpx;">就诊日期
+      <picker class="picker" name="consulationday" mode="date" bindchange="change_consulationday">
+        <view class="placeholderStyle" wx:if="{{consulationday==''||consulationday== null}}">请选择就诊日期</view>
+        <view class="picker-style" wx:else>{{consulationday}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 138rpx;">手术日期
+      <picker class="picker" name="operationday" mode="date" bindchange="change_operationday">
+        <view class="placeholderStyle" wx:if="{{operationday==''||operationday== null}}">请选择手术日期</view>
+        <view class="picker-style" wx:else>{{operationday}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 243rpx;">治疗方式
+      <picker class="picker" name="treatment" bindchange="change_treatment" value="{{treatment}}" range="{{treatmentList}}">
+        <view class="placeholderStyle" wx:if="{{treatment==''||treatment== null}}">请选择治疗方式</view>
+        <view class="picker-style" wx:else>{{treatment}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+    <button class="upload" bindtap="upload" style="width: 614rpx;height: 328rpx;border-radius: 29rpx;top: 361rpx;" id="0">
+      <view class="placeholderStyle" style="font-size: 29rpx;line-height: 35rpx;left: 191rpx;bottom: 120rpx;">请拍摄病历页上传</view>
+      <image wx:if="{{!consulation_img}}" src="/images/cross.png" class="upload_img" />
+      <image wx:else src="{{consulation_img}}" class="upload" style="width: 614rpx;height: 328rpx;border-radius: 29rpx;top: 0rpx;left: 0rpx;"/>
+    </button>
+    <button class="upload" bindtap="upload" style="width: 614rpx;height: 328rpx;border-radius: 29rpx;bottom: 161rpx;" id="1">
+    <view class="placeholderStyle" style="font-size: 29rpx;line-height: 35rpx;left: 172rpx;bottom: 120rpx;">请拍摄X光片内容上传</view>
+      <image wx:if="{{!Xray_img}}" src="/images/cross.png" class="upload_img"/>
+      <image wx:else src="{{Xray_img}}" class="upload"  style="width: 614rpx;height: 328rpx;border-radius: 29rpx;top: 0rpx;left: 0rpx;"/>
+    </button>
+    <button class="card-btn" style="width: 639rpx;height: 85rpx;border-radius: 18rpx;" form-type="submit">
+      <view class="btn-name">完成</view>
+    </button>
+  </view>
+</form>

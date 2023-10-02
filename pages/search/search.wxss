@@ -1,0 +1,148 @@
+/* pages/search/search.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.contain{
+  width: 100%;
+  position: relative;
+  top: 48rpx;
+  margin-bottom: 50rpx;
+}
+
+.contain .list{
+  width: 696rpx;
+  height: 100%;
+	background-color: #ffffff;
+  border-radius: 29rpx;
+  
+  position: relative;
+  left: 27rpx;
+  margin-bottom: 18rpx;
+  padding-bottom: 40rpx;
+}
+
+.contain .list .avatar{
+  width: 49rpx;
+	height: 49rpx;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+
+  position: relative;
+  left: 24rpx;
+  top: 24rpx;
+}
+
+.contain .list .name{
+  width: max-content;
+  height: 36rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 25rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  position: relative;
+  left: 89rpx;
+  top: -25rpx;
+  display: flex;
+}
+
+.contain .list .name .label{
+  width: 114rpx;
+	height: 33rpx;
+	background-color: #e2f4fc;
+	border-radius: 16rpx;
+  
+  display: flex;
+  justify-content: center;
+	align-items: center;
+
+  position: absolute;
+  top: 0rpx;
+  right: -128rpx;
+
+  font-family: Alibaba PuHuiTi;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 36rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+}
+
+.contain .list .list-title{
+  width: 652rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 45rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+
+  position: relative;
+  top: 0rpx;
+  padding: 0rpx 22rpx;
+
+  text-overflow: ellipsis;
+	overflow: hidden;
+	display:-webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.contain .list .list-content{
+  width: 652rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 42rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+  
+  position: relative;
+  top: 14rpx;
+  padding: 0rpx 22rpx;
+
+  text-overflow: ellipsis;
+	overflow: hidden;
+	display:-webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.contain .list .list-img0{
+  width: 212rpx;
+  height: 170rpx;
+  border-top-left-radius: 25rpx;
+  border-bottom-left-radius: 25rpx;
+  
+  position: relative;
+  top: 30rpx;
+  margin-left: 22rpx;
+}
+
+.contain .list .list-img1{
+  width: 212rpx;
+	height: 170rpx;
+  
+  position: relative;
+  top: 30rpx;
+  margin-left: 9rpx;
+}
+
+.contain .list .list-img2{
+  width: 212rpx;
+  height: 170rpx;
+  border-top-right-radius: 25rpx;
+  border-bottom-right-radius: 25rpx;
+  
+  position: relative;
+  top: 30rpx;
+  left: 9rpx;
+}

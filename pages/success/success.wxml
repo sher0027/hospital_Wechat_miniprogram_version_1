@@ -1,0 +1,20 @@
+<!--pages/success/success.wxml-->
+<navbar title="{{title}}"></navbar>
+<view class="contain">
+    <view class="list" wx:for="{{successList}}" data-index="{{index}}" wx:key="tag" bindtap="detail">
+        <image class="avatar" src="{{item.avatar}}" mode="aspectFill"/>
+        <view class="name">{{item.name}}
+            <view class="label">{{item.tag}}</view>
+        </view>
+        <view class="list-title">{{item.title}}</view>
+        <view class="list-content">{{item.description}}</view>
+        <image class="list-img0" wx:if="{{item.img0 && item.img1}}" src="{{item.img0}}" mode="aspectFill" />
+        <!-- 只有一张图片的情况,第一张图全圆角 -->
+        <image class="list-img0" wx:if="{{!item.img1 && item.img0}}" src="{{item.img0}}" mode="aspectFill" style="border-radius: 25rpx;"/>
+
+        <image class="list-img1" wx:if="{{item.img2 && item.img1}}" src="{{item.img1}}" mode="aspectFill"/>
+        <!-- 有两张图片的情况 -->
+        <image class="list-img1" wx:if="{{!item.img2 && item.img1}}" src="{{item.img1}}" mode="aspectFill" style="border-top-right-radius: 25rpx;border-bottom-right-radius: 25rpx;"/>
+        <image class="list-img2" wx:if="{{item.img2}}" src="{{item.img2}}" mode="aspectFill"/> 
+    </view>
+</view>

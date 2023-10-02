@@ -1,0 +1,83 @@
+/* pages/share/share.wxss */
+page{
+  background: #f7f7f7;
+}
+.navbar{
+  width: 750rpx;
+  height: 134rpx;
+  background: #f7f7f7;
+}
+
+.navbar .navbar-icon{
+  width: 11rpx;
+  height: 14rpx;
+  
+  position: absolute;
+  top: 105rpx;
+  left: 37rpx;
+}
+
+.navbar .navbar-title{
+  height: 42rpx;
+  font-family: Alibaba PuHuiTi;
+  font-size: 33rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 35rpx;
+  letter-spacing: 0rpx;
+  color: #333333;
+  
+  position: absolute;
+  top: 92rpx;
+  left: 71rpx;
+}
+
+.show{
+  width: 569rpx;
+  height: 967rpx;
+  background-color: f7f7f7;
+  
+  border-radius: 29rpx;
+
+  position: absolute;
+  top: 243rpx;
+  left: 91rpx;
+  padding-bottom: 415rpx;
+}
+
+.show .poster{
+  width: 569rpx;
+  height: 967rpx;
+  border-radius: 29rpx;
+
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.btn{
+	background-color: #3793fd;
+  padding: 0rpx;
+  position: absolute;
+  left: 91rpx;
+  top: 1275rpx;
+}
+
+.btn .btn-name{
+  height: 43rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #ffffff;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  left: 221rpx;
+  top: 20rpx;
+}

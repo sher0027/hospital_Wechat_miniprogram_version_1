@@ -1,0 +1,30 @@
+<!--pages/introduction_detail/introduction_detail.wxml-->
+<navbar title="{{title}}"></navbar>
+<view class="card" style="height: 585rpx;top: 176rpx;" wx:key="key">
+  <image class="card-photo" src="{{doctorDetail.avatar}}" mode="aspectFill" />
+  <view class="card-name">{{doctorDetail.name}}</view>
+  <view class="normalstyle" style="top: 149rpx;left: 24rpx;font-size: 29rpx;">{{doctorDetail.jobDuty}}</view>
+  <view class="card-label">
+    <view class="normalstyle" style="font-size: 22rpx;line-height: 33rpx;top: 2rpx;left: 22rpx;">三甲</view>
+  </view>
+  <view class="normalstyle" style="top: 202rpx;left: 114rpx;font-size: 29rpx;">{{doctorDetail.hospital}}</view>
+    <view class="normalstyle" style="position: absolute;width: 654rpx;top: 272rpx;left: 24rpx;font-size: 25rpx;color: #3793fd;">擅长疾病
+      <text class="normalstyle" style="position: absolute;width: 530rpx;top: 0rpx;left: 124rpx;text-overflow: ellipsis;overflow: hidden;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;">{{doctorDetail.disease}}</text>
+    </view>
+    <view class="normalstyle" style="position: absolute;width: 654rpx;top: 312rpx;left: 24rpx;font-size: 25rpx;color: #3793fd;">擅长技术
+      <text class="normalstyle" style="position: absolute;width: 530rpx;top: 0rpx;left: 124rpx;text-overflow: ellipsis;overflow: hidden;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;">{{doctorDetail.skills}}</text>
+    </view>
+  <button class="btn" style="width: 639rpx;height: 85rpx;border-radius: 18rpx;" bindtap="consulate">
+    <view class="btn-name" bindtap="consulate">开始问诊</view>
+  </button>
+</view>
+
+<view class="title" style="top: 799rpx">医生简介</view>
+<view class="card" style="height: auto;top: 884rpx;margin-bottom: 83rpx;">
+  <view class="normalstyle" style="text-align: left;padding: 35rpx 20rpx 40rpx 30rpx;font-size: 25rpx;line-height: 38rpx;">{{doctorDetail.description}}</view>
+</view>
+
+<!-- <view class="title" style="top: 1797rpx">门诊信息</view>
+<view class="card" style="height: 821rpx;top: 1882rpx;margin-bottom: 83rpx;" wx:for="{{doctorDetail}}" wx:key="key">
+  <image class="card-image" src="{{doctorDetail.timetableCard}}" mode="aspectFill"/>
+</view> -->

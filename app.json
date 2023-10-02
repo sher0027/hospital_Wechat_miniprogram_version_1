@@ -1,0 +1,58 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/webview/webview",
+    "pages/consulate/consulate",
+    "pages/success/success",
+    "pages/science/science",
+    "pages/search/search",
+    "pages/introduction/introduction",
+    "pages/introduction_detail/introduction_detail",
+    "pages/example_list/example_list",
+    "pages/example_detail/example_detail",
+    "pages/case/case",
+    "pages/case_add/case_add",
+    "pages/consulation_add/consulation_add",
+    "pages/me/me",
+    "pages/record/record",
+    "pages/share/share",
+    "pages/about/about"
+  ],
+  "window":{
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/tabbar1_unselected.png",
+      "selectedIconPath": "images/tabbar1_selected.png"
+      },
+      {
+      "pagePath": "pages/introduction/introduction",
+      "text": "团队介绍",
+      "iconPath": "images/tabbar2_unselected.png",
+      "selectedIconPath": "images/tabbar2_selected.png"
+      },
+      {
+        "pagePath": "pages/case/case",
+        "text": "记录夹",
+        "iconPath": "images/tabbar3_unselected.png",
+        "selectedIconPath": "images/tabbar3_selected.png"
+        },
+        {
+          "pagePath": "pages/me/me",
+          "text": "我的",
+          "iconPath": "images/tabbar4_unselected.png",
+          "selectedIconPath": "images/tabbar4_selected.png"
+          }     
+    ],
+    "color": "#bbbbbb",
+    "borderStyle": "black",
+    "selectedColor": "#3793fd",
+    "backgroundColor": "#ffffff"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,126 @@
+/* pages/case/case.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.contain{
+  width: 100%;
+  position: relative;
+}
+
+.contain .info{
+  width: 696rpx;
+  background-color: #ffffff;
+  border-radius: 29rpx;
+  position: relative;
+  left: 27rpx;
+  top: 0rpx;
+  z-index: -1;
+}
+
+.contain .title{
+  height: 43rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  position: absolute;
+  left: 45rpx;
+
+  display: flex;
+	align-items: center;
+  align-content: center;
+}
+
+.contain .info .normalstyle{
+  width: 440rpx;
+  height: 38rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #3793fd;
+  
+  position: absolute;
+  left: 27rpx;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+}
+
+.contain .unregistered_btn{
+  border: solid 2rpx #d5d5d5;
+  background-color: #ffffff; 
+  padding: 0rpx;
+  margin: 0rpx;
+  position: absolute;
+  top: 33rpx;
+  right: 53rpx;
+}
+
+.contain .unregistered_btn .btn-name{
+  height: 38rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 22rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #bbbbbb;
+  
+  position: absolute;
+  left: 49rpx;
+  bottom: 47rpx;
+
+  display: flex;
+	align-items: center;
+  align-content: center;
+}
+
+.contain .info .info-label{
+	height: 62rpx;
+	background-color: #f7f7f7;
+  border-radius: 22rpx;
+  position: absolute;
+  left: 43rpx;
+}
+
+.contain .info .info-img{
+  width: 614rpx;
+	height: 328rpx;
+  border-radius: 29rpx;
+  position: absolute;
+  left: 42rpx;
+}
+
+.contain .registered_btn{
+  background-color: #3793fd;
+  padding: 0rpx;
+  margin: 0rpx;
+  position: absolute;
+}
+
+.contain .registered_btn .btn-name{
+  font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 29rpx;
+	letter-spacing: 0rpx;
+  color: #ffffff;
+  
+  position: absolute;
+  top: 13rpx;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+}
+
+

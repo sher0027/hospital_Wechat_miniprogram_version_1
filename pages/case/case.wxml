@@ -1,0 +1,52 @@
+<!--pages/case/case.wxml-->
+<view class="contain" style="top: 179rpx;">
+  <view class="title" style="top: -89rpx;">个人信息</view>
+  <button wx:if="{{patientInfo.name == '未注册'}}" class="unregistered_btn"bindtap="register" style="width: 183rpx;height: 208rpx;border-radius: 29rpx;">
+      <view class="btn-name">注册患者</view>
+      <image src="/images/cross.png" style="width: 24rpx;height: 24rpx;position: absolute;top: 72rpx;left: 80rpx;" />
+    </button>
+    <button wx:if="{{patientInfo.name != '未注册'}}" class="registered_btn" bindtap="edit" style="width: 156rpx;height: 63rpx;border-radius: 22rpx;top: 33rpx;right: 47rpx;">
+      <view class="btn-name" style="left: 53rpx;">修改</view>
+    </button>
+  <view class="info" style="height: 277rpx;" wx:key="key">
+    <view class="normalstyle" style="top: 33rpx;">姓名
+      <view class="normalstyle" style="width: 280rpx;color: #333333;top: 0rpx;left: 160rpx;">{{patientInfo.name}}</view>
+    </view>
+    <view class="normalstyle" style="top: 87rpx;">ID号
+      <view class="normalstyle" style="width: 280rpx;color: #333333;top: 0rpx;left: 160rpx;">{{patientInfo.realPatientId}}</view>
+    </view>
+    <view class="normalstyle" style="top: 141rpx;">性别
+      <view class="normalstyle" style="width: 280rpx;color: #333333;top: 0rpx;left: 160rpx;">{{patientInfo.genderString}}</view>
+    </view>
+    <view class="normalstyle" style="top: 195rpx;">出生日期
+      <view class="normalstyle" style="width: 280rpx;color: #333333;top: 0rpx;left: 160rpx;">{{patientInfo.birthdayString}}</view>
+    </view>
+  </view>
+</view>
+<view class="contain" style="top: 315rpx;padding-bottom: 50rpx;">
+  <view class="title" style="top: -83rpx;" wx:if="{{patientInfo.name != '未注册'}}">治疗记录</view>
+    <button class="registered_btn" bindtap="consulation_add" style="width: 208rpx;height: 63rpx;border-radius: 22rpx;top: -92rpx;right: 27rpx;" wx:if="{{patientInfo.name != '未注册'}}">
+    <view class="btn-name" style="left: 22rpx;">新增治疗记录</view>
+  </button>
+  <view class="info" wx:for="{{caseList}}" style="height: 1130rpx;margin-bottom: 43rpx;" data-index="{{index}}">
+    <view class="normalstyle" style="top: 33rpx;">就诊日期
+      <view class="normalstyle" style="width: 480rpx;color: #333333;top: 0rpx;left: 160rpx;">{{item.consultationDatetimeString}}</view>
+    </view>
+    <view class="normalstyle" style="top: 87rpx;">手术日期
+      <view class="normalstyle" style="width: 480rpx;color: #333333;top: 0rpx;left: 160rpx;">{{item.operationDatetimeString}}</view>
+    </view>
+    <view class="normalstyle" style="top: 141rpx;">治疗方式
+      <view class="normalstyle" style="width: 480rpx;color: #333333;top: 0rpx;left: 160rpx;">{{item.treatment}}</view>
+    </view>
+    <view class="info-label" style="width: 127rpx;top: 226rpx;">
+      <view class="normalstyle" style="color: #333333;top: 11rpx;left: 36rpx;">病历</view>
+    </view>
+    <image class="info-img" src="{{item.consultationImg}}" mode="aspectFill" style="top: 312rpx;"/>
+    <view class="info-label" style="width: 147rpx;top: 663rpx;">
+      <view class="normalstyle" style="color: #333333;top: 11rpx;left: 36rpx;">X光片</view>
+    </view>
+    <image class="info-img" src="{{item.xrayImg}}" mode="aspectFill" style="top: 748rpx;"/>
+  </view>
+</view>
+
+

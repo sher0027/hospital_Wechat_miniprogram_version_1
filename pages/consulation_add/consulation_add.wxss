@@ -1,0 +1,122 @@
+/* pages/consulation_add/consulation_add.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.hint{
+  height: 34rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 25rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #8e8e8e;
+  
+  position: absolute;
+  top: 150rpx;
+  left: 71rpx;
+}
+
+.card{
+  width: 696rpx;
+  height: 1221rpx;
+	background-color: #ffffff;
+  border-radius: 29rpx;
+  
+  position: absolute;
+  top: 243rpx;
+  left: 27rpx;
+  margin-bottom: 161rpx;
+}
+
+.card .card-title{
+  height: 43rpx;
+  font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+  
+  position: absolute;
+  left: 42rpx;
+}
+
+.input{
+  width: 381rpx;
+  height: 33rpx;
+  position: absolute;
+  left: 228rpx;
+  top: -2rpx;
+  padding: 0;
+  margin: 0;
+}
+
+.placeholderStyle{
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #bbbbbb;
+  position: absolute;
+}
+
+.card .card-title .line{
+  width: 639rpx;
+	height: 0rpx;
+  border-bottom: solid 1rpx #bbbbbb;
+  
+  position: absolute;
+  left: -14rpx;
+  top: 72rpx;
+}
+
+.picker{
+  width: 381rpx;
+  height: 33rpx;
+  position: absolute;
+  left: 228rpx;
+  top: -2rpx;
+}
+
+.card .card-btn{
+  background-color: #3793fd;
+  padding: 0rpx;
+  position: absolute;
+  left: 29rpx;
+  bottom: 34rpx;
+}
+
+.card .card-btn .btn-name{
+  font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+
+  position: absolute;
+  left: 286rpx;
+  top: 20rpx;
+}
+
+.upload{
+  border: solid 2rpx #d5d5d5;
+  background-color: #ffffff; 
+  padding: 0;
+  position: absolute;
+  left: 42rpx;
+}
+
+.upload .upload_img{
+  width: 24rpx;
+  height: 24rpx;
+  position: absolute;
+  top: 134rpx;
+  left: 295rpx;
+}

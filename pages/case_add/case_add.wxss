@@ -1,0 +1,211 @@
+/* pages/case_add/case_add.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.hint{
+  height: 34rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 25rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #8e8e8e;
+  
+  position: absolute;
+  top: 150rpx;
+  left: 71rpx;
+}
+
+.card{
+  width: 696rpx;
+	background-color: #ffffff;
+  border-radius: 29rpx;
+  
+  position: absolute;
+  top: 243rpx;
+  left: 27rpx;
+}
+
+.card .card-title{
+  height: 33rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  position: absolute;
+  left: 43rpx;
+}
+
+.input{
+  width: 381rpx;
+  height: 33rpx;
+  position: absolute;
+  left: 228rpx;
+  top: -2rpx;
+  padding: 0;
+  margin: 0;
+}
+
+.placeholderStyle{
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #bbbbbb;
+}
+
+.card .card-title .line{
+  width: 641rpx;
+	height: 0rpx;
+  border-bottom: solid 1rpx #bbbbbb;
+  
+  position: absolute;
+  left: -16rpx;
+  top: 72rpx;
+}
+
+/* radio未选中时样式 */ 
+radio .wx-radio-input{ 
+  width: 94rpx;
+  height: 47rpx;
+  margin: 0%;
+	background-color: #f7f7f7;
+	border-radius: 13rpx;
+ }
+/* 选中后的 背景样式 （可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked{
+  background-color: #3793fd !important;
+	opacity: 0.2;
+}
+/* 选中后的 对勾样式 （可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{
+  width: 0rpx; 
+  height: 0rpx; 
+  text-align: center;
+  font-size: 0rpx; 
+}
+
+.radio{
+	display: flex;
+	position: absolute;
+}
+
+.active{
+  position: relative;
+  left: -59rpx;
+  font-family: Alibaba PuHuiTi;
+	font-size: 25rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+	color: #3793fd;
+}
+
+.inactive{
+  position: relative;
+  left: -59rpx;
+  font-family: Alibaba PuHuiTi;
+	font-size: 25rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+
+.picker{
+  width: 381rpx;
+  height: 33rpx;
+  position: absolute;
+  left: 228rpx;
+  top: -2rpx;
+}
+
+.card .card-btn{
+  background-color: #3793fd;
+  padding: 0rpx;
+  position: absolute;
+  left: 29rpx;
+  bottom: 34rpx;
+}
+
+.card .card-btn .btn-name{
+  font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+	color: #ffffff;
+
+  position: absolute;
+  left: 286rpx;
+  top: 20rpx;
+}
+
+.card .card-title .picker-view {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+  border-radius: 30rpx 30rpx 0 0;
+  z-index: 999;
+}
+
+/* 添加弹出的过渡动画 */
+picker-view.show {
+  height: 36%;
+  transition: all 0.4s;
+}
+
+/* // 设置单列数据的样式 */
+picker-view-column {
+  border-radius: 30rpx 30rpx 0 0;
+  color: #B8B8B8;
+  font-size: 32rpx;
+  margin-top: 47rpx;
+}
+
+/* // 设置选中框的样式 */
+.pickerCol {
+  width: 100%;
+  height: 50rpx;
+  color: #baa076;
+  border-top: 1px solid #f2f3f5;
+  border-bottom: 1px solid #f2f3f5;
+}
+
+/* // 添加前面的三角形 */
+.pickerCol::before {
+  width: 10rpx; 
+  height: 28rpx;
+  position: absolute;
+  left: 200rpx;
+  top: 15rpx;
+  background-image: url(//demo.17weiju.com/wxsh/wxsh/image/food-sjx.png);
+  background-size: 100% 100%;
+}
+
+/* // 这里的两个伪类有默认样式（两条线），但是介于我已经重写了before，这里就取消after的显示 */
+.pickerCol::after {
+  display: none;
+}
+
+/*  自定义选中的时候字体颜色和大小 */
+.pick-text {
+  color: #baa076;
+  font-size: 34rpx;
+}

@@ -1,0 +1,120 @@
+/* pages/introduction_detail/introduction_detail.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.title{
+  height: 43rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  position: absolute;
+  left: 49rpx;
+}
+
+.card{
+  width: 696rpx;
+	background-color: #ffffff;
+  border-radius: 29rpx;
+  
+  position: absolute;
+  left: 29rpx;
+}
+
+.card .card-photo{
+  width: 150rpx;
+	height: 208rpx;
+  border-radius: 31rpx;
+  
+  position: absolute;
+  left: 522rpx;
+  top: 22rpx;
+}
+
+.card .card-name{
+  height: 58rpx;
+  font-family: Alibaba PuHuiTi;
+  font-size: 43rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 35rpx;
+  letter-spacing: 0rpx;
+  color: #333333;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx;
+}
+.card .normalstyle{
+  font-family: Alibaba PuHuiTi;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 35rpx;
+  letter-spacing: 0rpx;
+  color: #333333;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  word-break: break-all;
+  white-space:pre-wrap;
+}
+
+.card .card-label{
+  width: 82rpx;
+	height: 34rpx;
+	background-color: rgba(213, 213, 213, 0.5);
+  border-radius: 13rpx;
+  
+  position: absolute;
+  left: 20rpx;
+  top: 203rpx;
+}
+.card .btn{
+  background-color: #3793fd;
+  padding: 0rpx;
+  position: absolute;
+  left: 29rpx;
+  bottom: 27rpx;
+}
+
+.card .btn .btn-name{
+  height: 43rpx;
+  font-family: Alibaba PuHuiTi;
+  font-size: 33rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 33rpx;
+  letter-spacing: 0rpx;
+  color: #ffffff;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  left: 255rpx;
+  top: 20rpx;
+}
+
+.card .card-image{
+  width: 627rpx;
+	height: 770rpx;
+  border-radius: 27rpx;
+  
+  position: absolute;
+  left: 33rpx;
+  top: 31rpx;
+}
+
+

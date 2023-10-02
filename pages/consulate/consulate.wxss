@@ -1,0 +1,125 @@
+/* pages/consulate/consulate.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.list{
+  width: 696rpx;
+  height: 889rpx;
+  background-color: #ffffff;
+  border-radius: 29rpx;
+
+  position: absolute;
+  top: 243rpx;
+  left: 27rpx;
+}
+
+.list .list-title{
+  height: 43rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  left: 42rpx;
+}
+
+.list .list-content{
+  width: 384rpx;
+	height: 43rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+	color: #bbbbbb;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.list .list-line{
+	width: 639rpx;
+	height: 0rpx;
+	border-bottom: solid 1rpx #bbbbbb;
+
+  position: absolute;
+  left: -14rpx;
+  top: 72rpx;
+}
+
+.list .list-input{
+	width: 384rpx;
+	height: 43rpx;
+
+  position: absolute;
+  top: 0rpx;
+  left: 228rpx;
+}
+
+.ios-textarea{
+	width: 632rpx;
+  height: 410rpx;
+	padding-top: 19rpx;
+	padding-left: 32rpx;
+	padding-right: 32rpx;
+	background-color: #ffffff;
+
+	position: absolute;
+	top: 296rpx;
+	left: 0rpx;
+}
+
+.weui-textarea{
+	width: 612rpx;
+  height: 400rpx;
+	padding-top: 29rpx;
+	padding-left: 42rpx;
+	padding-right: 42rpx;
+	background-color: #ffffff;
+	
+  position: absolute;
+  top: 296rpx;
+	left: 0rpx;
+}
+
+.list .list-btn{
+	background-color: #3793fd;
+  padding: 0rpx;
+  position: absolute;
+  left: 29rpx;
+  bottom: 53rpx;
+}
+
+.list .list-btn .btn-name{
+  height: 42rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #ffffff;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  left: 286rpx;
+  top: 22rpx;
+}

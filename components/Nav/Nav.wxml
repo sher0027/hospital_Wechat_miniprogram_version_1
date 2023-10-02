@@ -1,0 +1,6 @@
+<!--components/Nav/Nav.wxml-->
+<view class="navbar">
+  <button bindtap="back" style="width: 260rpx;height: 50rpx;position: absolute;top: 85rpx;left: 10rpx;" hover-class="none"></button>
+  <image class="navbar-icon" src="/images/icon.png" mode="aspectFill" bindtap="back"/>
+  <view class="navbar-title">{{title}}</view>
+</view>

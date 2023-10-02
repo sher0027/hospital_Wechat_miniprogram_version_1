@@ -1,0 +1,107 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/introduction/introduction",
+          "pathName": "pages/introduction/introduction",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/me/me",
+          "pathName": "pages/me/me",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/case/case",
+          "pathName": "pages/case/case",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/consulate/consulate",
+          "pathName": "pages/consulate/consulate",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/introduction_detail/introduction_detail",
+          "pathName": "pages/introduction_detail/introduction_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/share/share",
+          "pathName": "pages/share/share",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/case_add/case_add",
+          "pathName": "pages/case_add/case_add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/consulation_add/consulation_add",
+          "pathName": "pages/consulation_add/consulation_add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/home/home",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/record/record",
+          "pathName": "pages/record/record",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/case_add/case_add",
+          "pathName": "pages/case_add/case_add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/example_detail/example_detail",
+          "pathName": "pages/example_detail/example_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/success/success",
+          "pathName": "pages/success/success",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/example_detail/example_detail",
+          "pathName": "pages/example_detail/example_detail",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/record/record",
+          "pathName": "pages/record/record",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

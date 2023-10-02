@@ -1,0 +1,46 @@
+<!--pages/introduction/introduction.wxml-->
+<view class="containcard">
+  <view class="title">团队介绍</view>
+  <view class="card" wx:for="{{doctorList}}" bindtap="introduction_detail" wx:key="key" data-index="{{index}}">
+    <image class="photo" src="{{item.avatar}}" mode="aspectFill"/>
+    <view class="name">{{item.name}}</view>
+    <view class="position">{{item.job}} {{item.duty}}</view>
+    <view class="info" style="top: 143rpx;">擅长疾病
+      <view class="detail">{{item.disease}}</view>
+    </view>
+    <view class="info" style="top: 179rpx;">擅长技术
+      <view class="detail">{{item.skills}}</view>
+    </view>
+    <button class="btn" style="width: 127rpx;height: 62rpx;border-radius: 22rpx;">
+      <view class="btn-name" bindtap="consulate">问医生</view>
+    </button>
+  </view>
+</view>
+
+<view class="containexample">
+  <view class="title">问答案例</view>
+  <view class="hint">平台优选典型案例</view>
+  <button class="btn" style="width: 130rpx;height: 29rpx;" bindtap="example_list">
+    <view class="btn-name">查看全部</view>
+    <image class="btn-icon" src="/images/btn_icon.png" mode="aspectFill"/>
+  </button>
+  <view class="list" wx:for="{{exampleList}}" data-index="{{index}}" wx:key="tag" bindtap="example_detail">
+    <view class="list-title">{{item.questionContent}}</view>
+    <view class="list-content">{{item.replyContent}}</view>
+  </view>
+  <!-- <view class="list" style="height: calc(252rpx*{{exampleList.length}}" >
+    <view class="list-content" wx:for="{{exampleList}}" data-index="{{index}}" bindtap="example_detail" style="top: 24rpx;">
+      <view class="icon" style="background-color: #3793fd;top: 5rpx;">
+        <view class="icon-name" style="color: #ffffff;">问</view>
+        <view class="list-question">{{item.questionContent}}</view>
+      </view>
+      <view class="icon" style="background-color: #ebebeb;top: 98rpx;">
+        <view class="icon-name" style="color: #3793fd;">答</view>
+        <view class="list-answer">{{item.replyContent}}</view>
+      </view>
+      <view class="list-line" wx:if="{{exampleList.length-index-1}}"></view>
+    </view>
+  </view> -->
+</view>
+
+

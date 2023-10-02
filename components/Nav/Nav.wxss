@@ -1,0 +1,33 @@
+/* components/Nav/Nav.wxss */
+page{
+  background: #f7f7f7;
+}
+.navbar{
+  width: 750rpx;
+  height: 134rpx;
+  background: #f7f7f7;
+}
+
+.navbar .navbar-icon{
+  width: 17rpx;
+  height: 20rpx;
+  
+  position: absolute;
+  top: 101rpx;
+  left: 37rpx;
+}
+
+.navbar .navbar-title{
+  height: 42rpx;
+  font-family: Alibaba PuHuiTi;
+  font-size: 33rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 35rpx;
+  letter-spacing: 0rpx;
+  color: #333333;
+  
+  position: absolute;
+  top: 92rpx;
+  left: 71rpx;
+}

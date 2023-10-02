@@ -1,0 +1,20 @@
+<!--pages/consulate/consulate.wxml-->
+<navbar title="{{title}}"></navbar>
+<form bindsubmit="consulate">
+  <view class="list">
+    <view class="list-title" style="top: 33rpx;">面向医生
+      <view class="list-content" style="left: 228rpx;">{{name}}</view>
+      <view class="list-line"></view>
+    </view>
+    <view class="list-title" style="top: 139rpx;">问题标题
+      <input name="title" class="list-input" placeholder="请输入标题" placeholder-class="list-content"/> 
+      <view class="list-line"></view>
+    </view>
+    <view class="list-title" style="top: 243rpx;">问题内容</view>
+    <textarea name="questionContent" class="{{isIos?'ios-textarea':'weui-textarea'}}" placeholder="请输入具体内容" placeholder-class="list-content"></textarea>
+    <button class="list-btn" style="width: 639rpx;height: 85rpx;border-radius: 18rpx;" form-type="submit">
+      <view class="btn-name">咨询</view>
+    </button>
+  </view>
+</form>
+

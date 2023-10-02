@@ -1,0 +1,11 @@
+<!--pages/example_list/example_list.wxml-->
+<navbar title="{{title}}"></navbar>
+<view class="containexample">
+  <view class="list" wx:for="{{exampleList}}" data-index="{{index}}" wx:key="tag" bindtap="example_detail">
+    <view class="list-title">{{item.questionContent}}</view>
+    <view class="list-content">{{item.replyContent}}</view>
+  </view>
+</view>
+
+
+

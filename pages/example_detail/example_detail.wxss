@@ -1,0 +1,110 @@
+/* pages/list_detail/list_detail.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.list{
+  width: 648rpx;
+	height: auto;
+	background-color: #ffffff;
+	border-radius: 29rpx;
+
+  position: relative;
+  top: 48rpx;
+	left: 27rpx;
+	padding: 40rpx 24rpx 20rpx;
+}
+
+.list .icon{
+  width: 62rpx;
+	height: 62rpx;
+	border-radius: 16rpx;
+
+	position: relative;
+}
+
+.list .icon .icon-name{
+  font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 29rpx;
+	letter-spacing: 0rpx;
+
+  position: absolute;
+  top: 15rpx;
+  left: 16rpx;
+}
+
+.list .list-question{
+  width: 558rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 45rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+
+  position: relative;
+  top: -62rpx;
+  left: 90rpx;
+}
+
+.list .list-answer{
+  width: 582rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 42rpx;
+	letter-spacing: 0rpx;
+  color: #666666;
+  
+	position: relative;
+  top: -62rpx;
+  left: 90rpx;
+}
+
+.list-line{
+  width: 656rpx;
+	height: 0rpx;
+	border-bottom: solid 1rpx #d5d5d5;
+  
+	position: relative;
+	margin-bottom: 40rpx;
+}
+
+.list .normalstyle{
+	width: 648rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #3793fd;
+  
+  position: relative;
+  display: flex;
+	margin-bottom: 30rpx;
+	/* top: 20rpx; */
+}
+
+.list .normalstyle .content{
+  width: 496rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  position: relative;
+  top: 0rpx;
+  left: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+}

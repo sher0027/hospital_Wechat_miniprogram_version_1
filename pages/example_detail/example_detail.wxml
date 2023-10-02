@@ -1,0 +1,23 @@
+<!--pages/example_detail/example_detail.wxml-->
+<navbar title="{{title}}"></navbar>
+<view class="list">
+  <view class="icon" style="background-color: #3793fd;">
+    <view class="icon-name" style="color: #ffffff;">问</view>
+  </view>
+  <view class="list-question">{{exampleDetail.questionContent}}</view>
+  
+  <view class="normalstyle">患者姓名
+    <view class="content">{{exampleDetail.patientName}}</view>
+  </view>
+  <view class="normalstyle">患者性别
+    <view class="content">{{exampleDetail.genderString}}</view>
+  </view>
+  <view class="list-line"></view>
+  <view class="icon" style="background-color: #ebebeb;">
+    <view class="icon-name" style="color: #3793fd;">答</view>
+  </view>
+  <view class="list-answer">{{exampleDetail.replyContent}}</view>
+  <view class="normalstyle">医生姓名
+    <view class="content">{{exampleDetail.doctorName}}</view>
+  </view>
+</view>

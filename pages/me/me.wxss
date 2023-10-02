@@ -1,0 +1,126 @@
+/* pages/me/me.wxss */
+page{
+  background: #f7f7f7;
+}
+.avatar{
+  width: 127rpx;
+  height: 127rpx;
+	border-radius: 50%;
+  
+  position: absolute;
+  top: 100rpx;
+  left: 43rpx;
+}
+.name{
+  height: 49rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 36rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  top: 112rpx;
+  left: 205rpx;
+}
+
+.birthday{
+	height: 34rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 25rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 33rpx;
+	letter-spacing: 0rpx;
+	color: #8e8e8e;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  top: 178rpx;
+  left: 205rpx;
+}
+
+.choice{
+  width: 696rpx;
+	height: 83rpx;
+  background-color: #ffffff;
+  border-radius: 25rpx;
+  
+  position: absolute;
+  left: 27rpx;
+}
+
+.choice .choice-name{
+  width: 590rpx;
+	height: 47rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 45rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  left: 94rpx;
+}
+
+.choice .choice-name .choice-icon{
+  width: 38rpx;
+  height: 38rpx;
+  
+  position: absolute;
+  top: 10rpx;
+  left: -60rpx;
+}
+
+.choice .choice-name .icon{
+  width: 11rpx;
+  height: 14rpx;
+  
+  position: absolute;
+  top: 15rpx;
+  left: 556rpx;
+}
+
+.choice .choice-name .choice-line{
+  width: 641rpx;
+  height: 0%;
+  border-bottom: solid 1rpx #bbbbbb;
+
+  position: absolute;
+  left: -69rpx;
+  top: 72rpx;
+}
+
+.title{
+  height: 47rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 45rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+
+  display: flex;
+	align-items: center;
+  align-content: center;
+
+  position: absolute;
+  top: 380rpx;
+  left: 45rpx;
+}

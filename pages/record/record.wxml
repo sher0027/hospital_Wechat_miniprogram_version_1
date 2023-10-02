@@ -1,0 +1,18 @@
+<!--pages/record/record.wxml-->
+<navbar title="{{title}}"></navbar>
+<view class="contain">
+  <view class="info" wx:for="{{record}}">
+    <view class="normalstyle">咨询问题
+      <view class="content">{{item.title}}</view>
+    </view>
+    <view class="normalstyle">问题详情
+      <view class="content">{{item.questionContent}}</view>
+    </view>
+    <view class="normalstyle">医生姓名
+      <view class="content">{{item.doctorName}}</view>
+    </view>
+    <view class="normalstyle">医生回复
+      <view class="content">{{item.replyContent}}</view>
+    </view>
+  </view>
+</view>

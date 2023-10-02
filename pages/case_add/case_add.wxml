@@ -1,0 +1,91 @@
+<!-- pages/case_add/case_add.wxml -->
+<navbar title="{{title}}"></navbar>
+<view class="hint">*以下信息请按门诊病历或出院小结内容如实填写</view>
+<form bindsubmit="addInfo">
+  <view class="card" style="height: 618rpx;">
+    <view class="card-title" style="top: 42rpx;">患者姓名
+      <input class="input" name="patientName" placeholder="请填写真实姓名" value="{{patientName}}" placeholder-class="placeholderStyle"/>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 147rpx;">患者ID
+      <input class="input" name="patientId" placeholder="请填写身份证号" value="{{patientId}}"placeholder-class="placeholderStyle"/>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 252rpx;">性别
+      <radio-group class="radio" name="patientGender" style="top: -2rpx;" bindchange="change_gender">
+        <view style="display:flex;position: absolute;left: 228rpx;">
+          <radio value="patientGender" wx:for-items="{{Gender}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}" style="margin-right: 38rpx;">
+            <text class="{{ currentValue == item.value ? 'active' : 'inactive'}}" bindchange="change_gender">{{item.value}}</text>
+          </radio>
+        </view>
+      </radio-group>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 357rpx;">出生日期
+      <picker class="picker" name="patientBirthday" mode="date" bindchange="change_birthday" value="{{patientBirthday}}">
+        <view class="placeholderStyle" wx:if="{{patientBirthday==''||patientBirthday== null}}">请选择出生日期</view>
+        <view class="picker-style" wx:else>{{patientBirthday}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+    <button class="card-btn" style="width: 639rpx;height: 85rpx;border-radius: 18rpx;" form-type="submit">
+      <view class="btn-name">完成</view>
+    </button>
+  </view>
+</form>
+
+<!-- <form wx:if="{{hasRegister}}">
+  <view class="card" style="height: 911rpx;">
+    <view class="card-title" style="top: 42rpx;">患者姓名
+      <input class="input" placeholder="请填写真实姓名" placeholder-class="placeholderStyle"/>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 147rpx;">患者ID
+      <input class="input" placeholder="请填写ID号" placeholder-class="placeholderStyle"/>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 252rpx;">性别
+      <radio-group class="radio" name="patientGender" style="top: -2rpx;" bindchange="change_gender">
+        <view style="display:flex;position: absolute;left: 228rpx;">
+          <radio value="patientGender" wx:for-items="{{Gender}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}" style="margin-right: 38rpx;">
+            <text class="{{ currentValue == item.value ? 'active' : 'inactive'}}" bindchange="change_gender">{{item.value}}</text>
+          </radio>
+        </view>
+      </radio-group>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 357rpx;">出生日期
+      <picker class="picker" name="date" mode="date" bindchange="change_date">
+        <view class="placeholderStyle" wx:if="{{date==''||date== null}}">请选择出生日期</view>
+        <view class="picker-style" wx:else>{{date}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 462rpx;">就诊日期
+      <picker class="picker" name="date" mode="date" bindchange="change_date">
+        <view class="placeholderStyle" wx:if="{{date==''||date== null}}">请选择就诊日期</view>
+        <view class="picker-style" wx:else>{{date}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+    <view class="card-title" style="top: 567rpx;">手术日期
+      <picker class="picker" name="date" mode="date" bindchange="change_date">
+        <view class="placeholderStyle" wx:if="{{date==''||date== null}}">请选择手术日期</view>
+        <view class="picker-style" wx:else>{{date}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+
+    <view class="card-title" style="top: 672rpx;">治疗方式
+      <picker class="picker" name="date" bindchange="change_date">
+        <view class="placeholderStyle" wx:if="{{date==''||date== null}}">请选择治疗方式</view>
+        <view class="picker-style" wx:else>{{date}}</view>
+      </picker>
+      <view class="line"></view>
+    </view>
+    
+    <button class="card-btn" style="width: 639rpx;height: 85rpx;border-radius: 18rpx;" form-type="submit">
+      <view class="btn-name">完成</view>
+    </button>
+  </view>
+</form> -->

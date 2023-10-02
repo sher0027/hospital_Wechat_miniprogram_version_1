@@ -1,0 +1,55 @@
+/* pages/record/record.wxss */
+page{
+  background: #f7f7f7;
+}
+.contain{
+  width: 100%;
+  position: relative;
+  top: 48rpx;
+  margin-bottom: 80rpx;
+}
+.contain .info{
+  width: 642rpx;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 29rpx;
+  
+  position: relative;
+  left: 27rpx;
+  margin-bottom: 24rpx;
+  padding: 40rpx 27rpx 5rpx;
+}
+
+.contain .info .normalstyle{
+  width: 642rpx;
+  /* height: 38rpx; */
+	font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #3793fd;
+  
+  position: relative;
+  display: flex;
+  margin-bottom: 40rpx;
+}
+
+.contain .info .normalstyle .content{
+  width: 496rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 35rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+  
+  position: relative;
+  top: 0rpx;
+  left: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-all;
+}

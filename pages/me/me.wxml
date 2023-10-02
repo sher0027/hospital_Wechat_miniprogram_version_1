@@ -1,0 +1,34 @@
+<!--pages/me/me.wxml-->
+<view wx:if="{{canIUseGetUserProfile}}" style="width: 750rpx;height: 1625rpx;" bindtap="login">
+  <image class="avatar" src="{{userInfo.avatar}}" mode="aspectFill"/>
+  <view class="name">{{userInfo.name}}</view>
+  <view class="birthday">{{userInfo.birthdayString}}</view>
+
+  <view class="choice" style="top: 261rpx;" bindtap="edit">
+    <view class="choice-name" style="top: 18rpx;">修改信息
+      <image class="choice-icon" src="/images/me_1.png" mode="aspectFill" />
+      <image class="icon" src="/images/btn_icon.png" mode="aspectFill"/>
+    </view>
+  </view>
+  <view class="title">健康咨询及服务</view>
+  <view class="choice" style="height: 324rpx;top: 462rpx;border-radius: 29rpx;">
+    <view class="choice-name" bindtap="record" style="top: 34rpx;">咨询记录
+      <image class="choice-icon" src="/images/me_2.png" mode="aspectFill" />
+      <view class="choice-line"></view>
+      <image class="icon" src="/images/btn_icon.png" mode="aspectFill"/>
+    </view>  
+    <view class="choice-name" bindtap="share" style="top: 139rpx;">分享
+      <image class="choice-icon" src="/images/me_3.png" mode="aspectFill" />
+      <view class="choice-line"></view>
+      <image class="icon" src="/images/btn_icon.png" mode="aspectFill"/>
+    </view>  
+    <view class="choice-name" bindtap="about" style="top: 244rpx;">关于
+      <image class="choice-icon" src="/images/me_4.png" mode="aspectFill" />
+      <!-- <view class="choice-line"></view> -->
+      <image class="icon" src="/images/btn_icon.png" mode="aspectFill"/>
+    </view>   
+  </view>
+</view>
+
+
+

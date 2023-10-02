@@ -1,0 +1,67 @@
+/* pages/example_list/example_list.wxss */
+page{
+  background: #f7f7f7;
+}
+
+.containexample{
+  width: 100%;
+  background-color: #f7f7f7;
+  border-radius: 29rpx;
+  position: relative;
+  top: 48rpx;
+  padding-bottom: 104rpx;
+}
+
+.containexample .list{
+  width: 696rpx;
+  height: 100%;
+	background-color: #ffffff;
+  border-radius: 29rpx;
+  
+  position: relative;
+  left: 27rpx;
+  margin-bottom: 18rpx;
+  padding-bottom: 60rpx;
+}
+
+.containexample .list .list-title{
+  width: 652rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 33rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 45rpx;
+	letter-spacing: 0rpx;
+  color: #333333;
+
+  position: relative;
+  top: 20rpx;
+  padding: 0rpx 22rpx;
+
+  text-overflow: ellipsis;
+	overflow: hidden;
+	display:-webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.containexample .list .list-content{
+  width: 652rpx;
+	font-family: Alibaba PuHuiTi;
+	font-size: 29rpx;
+	font-weight: normal;
+	font-stretch: normal;
+	line-height: 42rpx;
+	letter-spacing: 0rpx;
+	color: #666666;
+  
+  position: relative;
+  top: 34rpx;
+  padding: 0rpx 22rpx;
+
+  text-overflow: ellipsis;
+	overflow: hidden;
+	display:-webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
